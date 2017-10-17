@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3F3244;
+  line-height: 100px;
+}
+
+.header > hr {
+  display: none;
+}
+
+.title,
+.name {
+  color: #F2F2F2;
+}
+
+.title {
+  padding-left: 75px;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.title > span {
+  color: #34D1D1;
+}
+
+.name {
+  padding-right: 75px;
+  font-size: 25px;
+  letter-spacing: .5px;
+}
+
+.task-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task {
+  padding: 75px;
+  padding-right: 0;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.task-title-container > hr {
+  width: 70%;
+  margin-right: 75px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab > span {
+  display: none;
+}
+
+.tab {
+  height: 75px;
+  width: 21.25%;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #D1D2D3;
+  color: #666666;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 75px;
+  list-style: none;
+  text-align: center;
+}
+
+#tab-one,
+#tab-two,
+#tab-three {
+  border-right: 1px solid #FFF;
+}
+
+.active {
+  border-top: 1px solid #D1D2D3;
+  border-left: 1px solid #D1D2D3;
+  border-right: 1px solid #D1D2D3;
+  border-bottom: none;
+  background-color: #FFF;
+  font-weight: 600;
+}
+
+.content-container {
+  display: none;
+}
+
+.active-tab {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  order: 5;
+  border: 1px solid #D1D2D3;
+  border-top: none;
+}
+
+.img-container {
+  width: 35%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.text-content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content-header {
+  padding: 50px 0 15px;
+  font-size: 30px;
+}
+
+.text-content > hr {
+  width: 95%;
+}
+
+.text-content > p {
+  padding: 25px 25px 15px 0;
+  font-size: 25px;
+}
+
+.view-code-link {
+  height: 60px;
+  width: 450px;
+  display: block;
+  margin: 100px auto;
+  background-color: #2F2235;
+  border: none;
+  color: #F2F2F2;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 60px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .img-container {
+    width: 25%;
+  }
+  .text-content {
+    width: 75%;
+  }
+  img {
+    height: 350px;
+    width: 200px;
+  }
+  .task-title-container > hr {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .active-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .img-container {
+    width: 100%;
+  }
+  img {
+    height: 400px;
+    width: 450px;
+  }
+  .task-title-container > hr {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .task-title-container > hr {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    height: 150px;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 75px;
+  }
+  .header > hr {
+    width: 20%;
+    display: block;
+  }
+  .title,
+  .name {
+    padding: 0;
+  }
+  .task-title-container {
+    flex-direction: column;
+  }
+  .task {
+    margin-top: 25px;
+    padding: 25px;
+  }
+  .task-title-container > hr {
+    width: 20%;
+    margin: 0 0 125px;;
+  }
+  .tab {
+    height: 75px;
+    width: 85%;
+    padding-left: 25px;
+    border-bottom: 1px solid #FFF;
+    font-size: 25px;
+    line-height: 75px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  .active {
+    border-bottom: 1px solid #D2D3D4;
+  }
+  .tab span {
+    display: flex;
+    padding-right: 25px;
+    border-right: 1px solid #D2D3D4;
+    cursor: pointer;
+  }
+  .text-content-header {
+    font-size: 25px;
+  }
+  .text-content > p {
+    font-size: 20px;
+  }
+  .active-tab {
+    order: 0;
+  }
+  img {
+    height: 350px;
+  }
+  .view-code-link {
+    height: 75px;
+    width: 85%;
+    line-height: 75px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    height: 250px;
+    width: 250px;
+  }
+}
