@@ -193,7 +193,7 @@ main {
   }
   img {
     height: 400px;
-    width: 450px;
+    width: 400px;
   }
   .task-title-container > hr {
     width: 55%;
@@ -265,6 +265,7 @@ main {
   }
   img {
     height: 350px;
+    width: 350px;
   }
   .view-code-link {
     height: 75px;
