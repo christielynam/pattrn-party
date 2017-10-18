@@ -10,12 +10,12 @@ body {
 }
 
 .header {
-  height: 100px;
+  height: 75px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #3F3244;
-  line-height: 100px;
+  line-height: 75px;
 }
 
 .header > hr {
@@ -125,7 +125,10 @@ main {
   padding: 25px;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
+}
+
+img {
+  height: 400px;
 }
 
 .text-content {
@@ -166,34 +169,37 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-  .img-container {
-    width: 25%;
-  }
-  .text-content {
-    width: 75%;
+  .task-title-container > hr {
+    width: 65%;
   }
   img {
     height: 350px;
-    width: 200px;
   }
-  .task-title-container > hr {
-    width: 65%;
+  .text-content > p {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .active-tab {
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
+  .text-content {
+    width: 90%;
+  }
+  .text-content > p {
+    padding-right: 0;
+  }
   .img-container {
     width: 100%;
   }
   img {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
   }
   .task-title-container > hr {
     width: 55%;
@@ -253,12 +259,6 @@ main {
     padding-right: 25px;
     border-right: 1px solid #D2D3D4;
     cursor: pointer;
-  }
-  .text-content-header {
-    font-size: 25px;
-  }
-  .text-content > p {
-    font-size: 20px;
   }
   .active-tab {
     order: 0;
