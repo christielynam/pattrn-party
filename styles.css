@@ -293,17 +293,18 @@ img {
 
 .card {
   height: 250px;
+  min-width: 250px;
   border: 1px solid #D2D3D4;
 }
 
 .card-heading {
   height: 75px;
-  padding-left: 15px;
+  padding: 0 15px;
   border-bottom: 1px solid #D2D3D4;
   line-height: 75px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .image-container {
@@ -316,5 +317,26 @@ img {
 }
 
 #card-seven {
-  grid-area: 3/2/4/4;
+  grid-area: 3/2/3/4;
+}
+
+@media screen and (max-width: 1025px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #card-seven {
+    grid-area: 4/2/5/3;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  #card-one {
+    grid-area: 1/1/1/2
+  }
+  #card-seven {
+    grid-area: 7/1/7/2
+  }
 }
