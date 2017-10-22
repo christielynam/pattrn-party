@@ -292,7 +292,7 @@ img {
 }
 
 .card {
-  height: 250px;
+  height: 300px;
   min-width: 250px;
   border: 1px solid #D2D3D4;
 }
@@ -308,7 +308,7 @@ img {
 }
 
 .image-container {
-  height: 175px;
+  height: 225px;
   background-color: #F2F2F2;
 }
 
@@ -332,6 +332,12 @@ img {
 @media screen and (max-width: 650px) {
   .card-container {
     grid-template-columns: 1fr;
+  }
+  .card {
+    height: 400px;
+  }
+  .image-container {
+    height: 325px;
   }
   #card-one {
     grid-area: 1/1/1/2
