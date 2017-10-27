@@ -346,3 +346,42 @@ img {
     grid-area: 7/1/7/2
   }
 }
+
+/*header bar*/
+
+nav {
+  width: 85%;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D1D2D3;
+}
+
+.round-logo {
+  width: 100px;
+  height:100px;
+  border: 1px solid #666;
+  border-radius: 100px;
+  background-color: #F2F2F2;
+}
+
+nav > a {
+  color: #666;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+nav > input {
+  width: 300px;
+  height: 60px;
+  padding-left: 70px;
+  border: 1px solid #666;
+  font-family: inherit;
+  font-size: 25px;
+  background-image: url('assets/magnifying-glass (1).svg');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 20px;
+}
