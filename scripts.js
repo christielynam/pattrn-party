@@ -6,3 +6,7 @@ $('.tab').on('click', function() {
   $(this).find('span').text('-');
   $(this).next().addClass('active-tab');
 })
+
+$('.menu-btn').on('click', function() {
+  $('.nav-links-search').toggleClass('drop-down')
+})
