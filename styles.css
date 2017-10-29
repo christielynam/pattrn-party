@@ -416,7 +416,7 @@ nav {
   .drop-down {
     width: 100%;
     margin: 0 auto 50px;
-    display: inline-flex;;
+    display: flex;
     position: absolute;
     top: 150px;
     left: 0;
@@ -437,5 +437,9 @@ nav {
     width: 95%;
     margin-bottom: 40px;
   }
-  
+  .move-btn {
+
+    margin-bottom: 500px;
+  }
+
 }

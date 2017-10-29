@@ -9,4 +9,5 @@ $('.tab').on('click', function() {
 
 $('.menu-btn').on('click', function() {
   $('.nav-links-search').toggleClass('drop-down');
+  $('nav').toggleClass('move-btn');
 })
